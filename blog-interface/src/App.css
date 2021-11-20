@@ -52,15 +52,24 @@ nav a:hover {
 }
 
 #page-body {
-  max-width: 700px;
+  max-width: 900px;
   margin: auto;
-  padding-top: 64px;
+  padding: 64px 1rem 1rem 1rem;
+}
+
+.article-page {
+  padding-bottom: 3rem;
+  background-color: aliceblue;
 }
 
 .article-list-item {
   text-decoration: none;
-  color: black;
+  color: hsla(0, 0%, 0%, 0.7);
   padding: 16px 0 0 0;
+}
+
+.article-list-item:hover {
+  color: hsla(0, 0%, 0%, 1);
 }
 
 .article-list-item p {

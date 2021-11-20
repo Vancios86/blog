@@ -1,20 +1,28 @@
-import React from "react";
 import articleContent from "./article-content";
+import ArticlesList from "../components/ArticlesList";
+import Page404 from "./Page404";
 import { useParams } from "react-router-dom";
 
 const ArticlePage = () => {
   const { name } = useParams();
-  console.log(name);
   const article = articleContent.find((article) => article.name === name);
 
-  if (!article) return <h1>Article does not exist!</h1>;
+  if (!article) return <Page404 />;
+
+  const showOtherArticles = articleContent.filter(
+    (article) => article.name !== name
+  );
 
   return (
     <>
-      <h1>{article.title}</h1>
-      {article.content.map((paragraph, key) => (
-        <p key={key}>{paragraph}</p>
-      ))}
+      <div className="article-page">
+        <h1>{article.title}</h1>
+        {article.content.map((paragraph, key) => (
+          <p key={key}>{paragraph}</p>
+        ))}
+      </div>
+      <h3>Check out other articles</h3>
+      <ArticlesList articles={showOtherArticles} />
     </>
   );
 };
