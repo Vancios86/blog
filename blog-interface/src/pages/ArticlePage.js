@@ -2,6 +2,7 @@ import articleContent from "./article-content";
 import ArticlesList from "../components/ArticlesList";
 import CommentsList from "../components/CommentsList";
 import UpvotesSection from "../components/UpvotesSection";
+import AddCommentForm from "../components/AddCommentForm";
 import Page404 from "./Page404";
 import { useParams } from "react-router-dom";
 import { useState, useEffect } from "react";
@@ -16,7 +17,6 @@ const ArticlePage = () => {
     const fetchData = async () => {
       const apiCallResponse = await fetch(`/api/articles/${name}`);
       const responseBody = await apiCallResponse.json();
-      console.log(responseBody);
       setArticleInfo(responseBody);
     };
     fetchData();
@@ -41,6 +41,7 @@ const ArticlePage = () => {
           setArticleInfo={setArticleInfo}
         />
         <CommentsList comments={articleInfo.comments} />
+        <AddCommentForm articleName={name} setArticleInfo={setArticleInfo} />
       </div>
       <h3>Check out other articles</h3>
       <ArticlesList articles={showOtherArticles} />
