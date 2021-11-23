@@ -3,6 +3,7 @@ import React from "react";
 const AboutPage = () => (
   <>
     <h1>About me</h1>
+    <div className="about-page-image"></div>
     <p>
       Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
       tempor incididunt ut labore et dolore magna aliqua. Diam maecenas sed enim

@@ -32,6 +32,7 @@ const ArticlePage = () => {
     <>
       <div className="article-page">
         <h1>{article.title}</h1>
+        <div className="article-page-image"></div>
         {article.content.map((paragraph, key) => (
           <p key={key}>{paragraph}</p>
         ))}

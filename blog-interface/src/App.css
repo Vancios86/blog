@@ -1,11 +1,13 @@
 body {
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-family: "Oswald", Geneva, Verdana, sans-serif;
   font-size: 18px;
+  font-weight: 400;
+  background-color: rgb(255, 247, 235);
 }
 
 button {
   padding: 16px;
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-family: "Oswald", Geneva, Verdana, sans-serif;
   font-size: 16px;
   background-color: black;
   color: white;
@@ -24,7 +26,7 @@ nav {
   position: fixed;
   top: 0;
   width: 100%;
-  background: white;
+  background: rgb(255, 247, 235);
 }
 
 nav ul {
@@ -52,14 +54,54 @@ nav a:hover {
 }
 
 #page-body {
-  max-width: 900px;
+  max-width: 1000px;
   margin: auto;
   padding: 64px 1rem 1rem 1rem;
 }
 
+.home-page p {
+  text-align: justify;
+}
+
+.home-page-image {
+  float: right;
+  width: 321px;
+  height: 432px;
+  border-radius: 0.25rem;
+  border: 1px solid black;
+  margin: 0 0 0 0.5rem;
+  content: "";
+  background-image: url(./assets/home-page.jpg);
+  background-size: cover;
+}
+
+.about-page-image {
+  float: left;
+  width: 234px;
+  height: 234px;
+  border-radius: 50%;
+  shape-outside: circle();
+  border: 1px solid black;
+  margin: 0.25rem;
+  content: "";
+  background-image: url(./assets/home-page.jpg);
+  background-size: cover;
+}
+
 .article-page {
   padding-bottom: 3rem;
-  background-color: aliceblue;
+}
+
+.article-page-image {
+  float: right;
+  width: 234px;
+  height: 345px;
+  border-radius: 0.25rem;
+  border: 1px solid black;
+  margin: 0 0 0 0.5rem;
+  content: "";
+  background-image: url(./assets/home-page.jpg);
+  background-size: cover;
 }
 
 .article-list-item {
@@ -92,7 +134,7 @@ textarea {
   width: 300px;
   padding: 8px;
   border-radius: 8px;
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-family: "Oswald", Geneva, Verdana, sans-serif;
   font-size: 18px;
   border: 2px solid black;
   margin-bottom: 16px;
@@ -100,12 +142,24 @@ textarea {
 
 #add-comment-form button {
   width: 320px;
+  background-color: hsla(0, 0%, 0%, 0.7);
 }
 
-#upvotes-section button,
-p {
+#add-comment-form button:hover {
+  background-color: hsla(0, 0%, 0%, 1);
+}
+
+#upvotes-section p {
   display: inline-block;
-  margin-right: 16px;
+  margin-left: 0.77rem;
+}
+
+#upvotes-section button {
+  background-color: hsla(0, 0%, 0%, 0.7);
+}
+
+#upvotes-section button:hover {
+  background-color: hsla(0, 0%, 0%, 1);
 }
 
 .comment {
