@@ -1,10 +1,10 @@
 const articles = [
   {
-    name: "learn-react",
-    title: "The Fastest Way to Learn React",
+    name: "my-web-developer-story",
+    title: "How did I start with Web Development",
+    url: "https://source.unsplash.com/9SoCnyQmkzI",
     content: [
-      `Welcome! Today we're going to be talking about the fastest way to
-            learn React. We'll be discussing some topics such as proin congue
+      `Welcome! Today we're going to be talking about how I became a web developer. We'll be discussing some topics such as proin congue
             ligula id risus posuere, vel eleifend ex egestas. Sed in turpis leo. 
             Aliquam malesuada in massa tincidunt egestas. Nam consectetur varius turpis, 
             non porta arcu porttitor non. In tincidunt vulputate nulla quis egestas. Ut 
@@ -25,11 +25,11 @@ const articles = [
     ],
   },
   {
-    name: "learn-node",
-    title: "How to Build a Node Server in 10 Minutes",
+    name: "why-react",
+    title: "Why do I like React",
+    url: "https://source.unsplash.com/c8h0n7fSTqs",
     content: [
-      `In this article, we're going to be talking looking at a very quick way
-            to set up a Node.js server. We'll be discussing some topics such as proin congue
+      `In this article, we're going to be talking about my favourite JavaScript framework - React. We'll be discussing some topics such as proin congue
             ligula id risus posuere, vel eleifend ex egestas. Sed in turpis leo. 
             Aliquam malesuada in massa tincidunt egestas. Nam consectetur varius turpis, 
             non porta arcu porttitor non. In tincidunt vulputate nulla quis egestas. Ut 
@@ -50,12 +50,12 @@ const articles = [
     ],
   },
   {
-    name: "my-thoughts-on-resumes",
-    title: "My Thoughts on Resumes",
+    name: "my-multiple-failings",
+    title: "My failings and what they teached me",
+    url: "https://source.unsplash.com/cGXdjyP6-NU",
     content: [
-      `Today is the day I talk about something which scares most people: resumes.
-            In reality, I'm not sure why people have such a hard time with proin congue
-            ligula id risus posuere, vel eleifend ex egestas. Sed in turpis leo. 
+      `Today is the day I talk about something which scares most people: failing.
+            Proin congue ligula id risus posuere, vel eleifend ex egestas. Sed in turpis leo. 
             Aliquam malesuada in massa tincidunt egestas. Nam consectetur varius turpis, 
             non porta arcu porttitor non. In tincidunt vulputate nulla quis egestas. Ut 
             eleifend ut ipsum non fringilla. Praesent imperdiet nulla nec est luctus, at 

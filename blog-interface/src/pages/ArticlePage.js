@@ -33,11 +33,7 @@ const ArticlePage = () => {
       <div className="article-page">
         <h1>{article.title}</h1>
         <div className="article-page-image">
-          <img
-            src="https://source.unsplash.com/8n00CqwnqO8"
-            loading="lazy"
-            alt=""
-          />
+          <img src={article.url} loading="lazy" alt="" />
         </div>
         {article.content.map((paragraph, key) => (
           <p key={key}>{paragraph}</p>
