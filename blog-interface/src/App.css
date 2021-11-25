@@ -86,7 +86,7 @@ nav a:hover {
   border: 1px solid black;
   margin: 0.18rem;
   content: "";
-  background-image: url(./assets/home-page.jpg);
+  background-image: url(./assets/about-page.jpg);
   background-size: cover;
 }
 
