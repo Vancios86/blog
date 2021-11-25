@@ -8,7 +8,7 @@ const UpvotesSection = ({ articleName, articleInfo, setArticleInfo }) => {
   };
   return (
     <div id="upvotes-section">
-      <button onClick={() => upvoteArticle()}>Add Upvote</button>
+      <button onClick={() => upvoteArticle()}>Upvote</button>
       <p>This post received {articleInfo} upvotes</p>
     </div>
   );
